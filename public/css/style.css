@@ -375,6 +375,7 @@ header {
     display: block;
     object-fit: cover;
     margin: 15px auto;
+    border-radius: 100%;
 }
 
 .our-product-content ol i{
