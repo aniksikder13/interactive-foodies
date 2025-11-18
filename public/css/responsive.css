@@ -36,4 +36,19 @@
         margin-bottom: 30px; 
     }
 
+    .promotion_logo img{
+        width: 150px;
+    }
+
+    .featured_services{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+    .featured_services li{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
 }

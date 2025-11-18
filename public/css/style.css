@@ -12,6 +12,7 @@ ul, li {
     --green-color: #06C167;
     --light-green-color: #F3FCF7;
     --black-color: #1D1D1F;
+    --light-black-color: #7070703b;
 }
 
 body {
@@ -144,4 +145,56 @@ header {
 
 .hero-content button span{
     margin-right: 10px;
+}
+
+.promotion_logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.border-bottom{
+    border-bottom: 1px solid var(--light-black-color);
+}
+
+.promotion_logo img{
+    width: 100%;
+}
+
+.featured_services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 50px 0;
+}
+
+.featured_services li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.featured_services h3{
+    font-weight: 500;
+    font-size: 1.07rem;
+    color: var(--black-color);
+}
+
+.featured_services span{
+    font-size: 1.5rem;
+    color: var(--green-color);
+    padding: 20px;
+    background-color: var(--light-green-color);
+    border-radius: 8px;
+}
+
+.featured_services  p{
+    opacity: 0.8;
+    padding-top: 5px;
+    font-size: 0.9rem;
+    text-wrap: nowrap;
 }
