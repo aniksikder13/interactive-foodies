@@ -223,12 +223,11 @@ header {
     background-color: var(--light-green-color);
 }
 
-.our-benefit-content p, .our-stars-content p{
-    font-size: 0.95rem;
+.our-benefit-content p, .our-stars-content p, .our-product-content p{
     padding-bottom: 20px;
 }
 
-.our-benefit-content h1, .our-stars-content h1{
+.our-benefit-content h1, .our-stars-content h1, .our-product-content h1{
     font-size: 3.5rem;
     padding-bottom: 70px;
 }
@@ -341,4 +340,79 @@ header {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+}
+
+/* Our products */
+.our-product-content ul{
+    display: flex;
+    gap: 30px;
+}
+
+.our-product-content ul .card{
+    border: 1px solid var(--light-black-color);
+    box-shadow: inset 0 0 0 0.02rem var(--light-black-color);
+    padding: 10px 15px 20px 15px;
+    border-radius: 10px;
+    width: 270px;
+    transition: 0.5s;
+}
+
+.our-product-content ul .card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--green-color);
+}
+
+.review-star{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-product-content img{
+    width: 190px;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+    margin: 15px auto;
+}
+
+.our-product-content ol i{
+    color: var(--green-color);
+}
+
+.our-product-content h3{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.our-product-content .card button{
+    color: var(--green-color);
+    background-color: transparent;
+    border: 1px solid var(--green-color);
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: 15px 25px;
+    font-size: 1.04rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.our-product-content .card button i{
+    margin-left: 8px;
+}
+
+.our-product-content .card p{
+    text-align: center;
+    padding-top: 15px;
+    color: var(--green-color);
+}
+
+.old-price{
+    text-decoration: line-through;
+    opacity: 0.4;
+    color: var(--black-color);
+    margin-right: 10px;
 }

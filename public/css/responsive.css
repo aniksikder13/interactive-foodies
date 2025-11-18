@@ -74,7 +74,7 @@
         padding-left: 0px;
     }
 
-    .our-benefit-content h1, .our-stars-content h1, .our-feature h1{
+    .our-benefit-content h1, .our-stars-content h1, .our-feature h1, .our-product-content h1{
         font-size: 2rem;
         text-align: center;
         padding-bottom: 50px;
@@ -105,6 +105,12 @@
 
     .our-feature ul h3{
         font-size: 1.5rem;
+    }
+
+    .our-product-content ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
