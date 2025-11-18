@@ -132,7 +132,7 @@ header {
     padding-right: 80px;
 }
 
-.hero-content button{
+.hero-content button, .our-stars-content button{
     background-color: var(--green-color);
     color: #fff;
     border: none;
@@ -143,7 +143,7 @@ header {
     transition: 0.3s;
 }
 
-.hero-content button span{
+.hero-content button span, .our-stars-content button span{
     margin-right: 10px;
 }
 
@@ -205,7 +205,7 @@ header {
     padding: 150px 0;
 }
 
-.our-benefit-content {
+.our-benefit-content, .our-stars-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
@@ -223,12 +223,12 @@ header {
     background-color: var(--light-green-color);
 }
 
-.our-benefit-content p{
+.our-benefit-content p, .our-stars-content p{
     font-size: 0.95rem;
     padding-bottom: 20px;
 }
 
-.our-benefit-content h1{
+.our-benefit-content h1, .our-stars-content h1{
     font-size: 3.5rem;
     padding-bottom: 70px;
 }
@@ -241,4 +241,30 @@ header {
 
 .our-benefit-content ul li span{
     color: var(--green-color);
+}
+
+.our-stars-content img {
+    width: 100%;
+    padding-left: 100px;
+    background-color: var(--light-green-color);
+    padding-bottom: 90px;
+}
+
+/* Our stars */
+
+.our-stars-content ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.our-stars-content ul h6{
+    font-size: 2.2rem;
+    color: var(--green-color);
+}
+
+.our-stars-content ul p {
+    opacity: 0.7;
 }

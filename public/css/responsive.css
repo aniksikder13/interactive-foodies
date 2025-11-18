@@ -27,7 +27,7 @@
         padding-right: 0px;
     }
 
-    .hero-content button{
+    .hero-content button, .our-stars-content button{
         display: block;
         width: 100%;
         text-align: center;
@@ -51,7 +51,7 @@
         gap: 15px;
     }
 
-    .our-benefit-content {
+    .our-benefit-content, .our-stars-content, .our-stars-content ul {
         grid-template-columns: 1fr;
     }
 
@@ -59,20 +59,37 @@
         padding: 15px 0;
     }
 
-    .our-benefit-content p{
+    .our-benefit-content p, .our-stars-content p{
         text-align: center;
-       
     }
 
     .our-benefit-content div:last-child {
         padding-left: 0px;
     }
 
-    .our-benefit-content h1{
+    .our-benefit-content h1, .our-stars-content h1{
         font-size: 2rem;
         text-align: center;
         padding-bottom: 50px;
     }
 
+    .our-stars-content div:first-child {
+        order: 2;
+    }
+
+    .our-stars-content ul {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .our-stars-content ul h6 {
+        font-size: 1.7rem;
+    }
+
+    .our-stars-content img {
+        padding: 0px 20px 20px 20px;
+        height: 520px;
+        object-fit: cover;
+    }
 
 }
