@@ -1,3 +1,10 @@
+@media only screen and (min-width: 601px){
+    .our-feature ul li:nth-child(4n-1),
+    .our-feature ul li:nth-child(4n){
+        flex-direction: row-reverse;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .nav ul {
         display: none;
@@ -51,11 +58,11 @@
         gap: 15px;
     }
 
-    .our-benefit-content, .our-stars-content, .our-stars-content ul {
+    .our-benefit-content, .our-stars-content, .our-stars-content ul, .our-feature ul {
         grid-template-columns: 1fr;
     }
 
-    .our-benefit {
+    .our-benefit, .our-feature {
         padding: 15px 0;
     }
 
@@ -67,7 +74,7 @@
         padding-left: 0px;
     }
 
-    .our-benefit-content h1, .our-stars-content h1{
+    .our-benefit-content h1, .our-stars-content h1, .our-feature h1{
         font-size: 2rem;
         text-align: center;
         padding-bottom: 50px;
@@ -90,6 +97,14 @@
         padding: 0px 20px 20px 20px;
         height: 520px;
         object-fit: cover;
+    }
+
+    .our-feature ul li{
+        flex-direction: column;
+    }
+
+    .our-feature ul h3{
+        font-size: 1.5rem;
     }
 
 }
