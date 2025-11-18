@@ -4,22 +4,34 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 ul, li {
     list-style: none;
 }
 
 :root{
     --green-color: #06C167;
+    --light-green-color: #F3FCF7;
     --black-color: #1D1D1F;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black-color);
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .brand {
@@ -34,19 +46,102 @@ ul, li {
     align-items: center;
 }
 
-.navbar ul {
+.navbar ul, .mobile-nav .nav-dropdown ol {
     display: flex;
     gap: 40px;
 }
 
 .link {
     text-decoration: none;
-    color: var(--black-color);
     font-weight: 500;
     transition: 0.5s;
+    color: var(--black-color);
 }
 
 .link:hover {
     color: var(--green-color);
     text-decoration: underline;
+}
+
+.mobile-nav {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+.mobile-nav .nav-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--black-color);
+    transition: 0.5s;
+    border: 1px solid transparent;
+    padding: 2px;
+}
+
+.mobile-nav .nav-toggle :hover {
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+}
+
+.mobile-nav .nav-dropdown {
+    position: fixed;
+    top: 30px;
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    width: 200px;
+    height: 100vh;
+    display: none;
+}
+
+.mobile-nav:hover .nav-dropdown {
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-green-color);
+    padding-top: 120px;
+}
+
+.hero-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding-bottom: 0px;
+}
+
+.hero-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-content h1{
+    font-size: 4.5rem;
+    padding-top: 80px;
+}
+
+.hero-content p{
+    opacity: 0.9;
+    line-height: 22px;
+    padding: 25px 0;
+    padding-right: 80px;
+}
+
+.hero-content button{
+    background-color: var(--green-color);
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-content button span{
+    margin-right: 10px;
 }

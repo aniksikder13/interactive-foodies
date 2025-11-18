@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+    .nav ul {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav .nav-dropdown ol {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-content{
+        grid-template-columns: 1fr;
+        padding-bottom: 30px;
+    }
+
+    .hero-content h1{
+        font-size: 3.2rem;
+        text-align: center;
+        padding-top: 0px;
+    }
+
+    .hero-content p{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .hero-content button{
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 0px;
+        margin-top: 20px;
+        margin-bottom: 30px; 
+    }
+
+}

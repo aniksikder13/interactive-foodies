@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactie Foodies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="public/css/responsive.css" />
 </head>
@@ -14,7 +15,7 @@
             <h1 class="brand">
                 Foodies
             </h1>
-            <nav>
+            <nav class="nav">
                 <ul>
                     <li><a href="index.html" class="link">Home</a></li>
                     <li><a href="#" class="link">About Us</a></li>
@@ -22,7 +23,42 @@
                     <li><a href="#" class="link">Our Company</a></li>
                     <li><a href="#" class="link">Pages</a></li>
                 </ul>
+                <div class="mobile-nav">
+                    <button class="nav-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="nav-dropdown">
+                        <ol>
+                            <li><a href="index.html" class="link">Home</a></li>
+                            <li><a href="#" class="link">About Us</a></li>
+                            <li><a href="#" class="link">Service</a></li>
+                            <li><a href="#" class="link">Our Company</a></li>
+                            <li><a href="#" class="link">Pages</a></li>
+                        </ol>
+                    </div>
+                </div>
             </nav>
         </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section class="hero-section">
+            <div class="container hero-content">
+                <div>
+                    <h1>We're Serious For Food.</h1>
+                    <p>We strive to provide a space where guests can connect with themselves and explore their full potential, offering a safe place.</p>
+                    <button>
+                        <span>Get Started</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
+                <div>
+                    <img 
+                        src="public/images/foodies_hero.png" 
+                        alt="Hero Image" 
+                    />
+                </div>
+            </div>
+    </main>
 </body>
 </html>  
