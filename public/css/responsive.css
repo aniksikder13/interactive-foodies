@@ -51,4 +51,28 @@
         gap: 15px;
     }
 
+    .our-benefit-content {
+        grid-template-columns: 1fr;
+    }
+
+    .our-benefit {
+        padding: 15px 0;
+    }
+
+    .our-benefit-content p{
+        text-align: center;
+       
+    }
+
+    .our-benefit-content div:last-child {
+        padding-left: 0px;
+    }
+
+    .our-benefit-content h1{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+
 }

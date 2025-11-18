@@ -198,3 +198,47 @@ header {
     font-size: 0.9rem;
     text-wrap: nowrap;
 }
+
+/* Our benifit */
+
+.our-benefit {
+    padding: 150px 0;
+}
+
+.our-benefit-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+}
+
+.our-benefit-content div:last-child {
+    padding-left: 50px;
+}
+
+.our-benefit-content img {
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: var(--light-green-color);
+}
+
+.our-benefit-content p{
+    font-size: 0.95rem;
+    padding-bottom: 20px;
+}
+
+.our-benefit-content h1{
+    font-size: 3.5rem;
+    padding-bottom: 70px;
+}
+
+.our-benefit-content ul li{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.our-benefit-content ul li span{
+    color: var(--green-color);
+}
