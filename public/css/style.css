@@ -7,3 +7,46 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+ul, li {
+    list-style: none;
+}
+
+:root{
+    --green-color: #06C167;
+    --black-color: #1D1D1F;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--green-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.link:hover {
+    color: var(--green-color);
+    text-decoration: underline;
+}
