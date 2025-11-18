@@ -74,7 +74,7 @@
         padding-left: 0px;
     }
 
-    .our-benefit-content h1, .our-stars-content h1, .our-feature h1, .our-product-content h1{
+    .our-benefit-content h1, .our-stars-content h1, .our-feature h1, .our-product-content h1, .promotional-banner h1{
         font-size: 2rem;
         text-align: center;
         padding-bottom: 50px;
@@ -111,6 +111,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .promotional-banner{
+        margin-top: 50px;
+        border-radius: 0px;
     }
 
 }

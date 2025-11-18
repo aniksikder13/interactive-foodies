@@ -132,7 +132,7 @@ header {
     padding-right: 80px;
 }
 
-.hero-content button, .our-stars-content button{
+.hero-content button, .our-stars-content button, .promotional-banner button{
     background-color: var(--green-color);
     color: #fff;
     border: none;
@@ -416,4 +416,40 @@ header {
     opacity: 0.4;
     color: var(--black-color);
     margin-right: 10px;
+}
+
+.promotional-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    background-image: url('/public/images/Rectangle 8.png');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.promotional-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.promotional-banner > * {
+    position: relative;
+    z-index: 2;
+}
+
+.promotional-banner h1{
+    font-size: 3rem;
+    color: white;
+    max-width: 700px;
+    padding-bottom: 30px;
+    text-align: center;
 }
