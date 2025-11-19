@@ -97,8 +97,8 @@
         font-size: 1.5rem;
     }
 
-    .our-stars-content ul h6 {
-        font-size: 1.7rem;
+    .our-stars-content ul p {
+        font-size: 1rem;
     }
 
     .our-stars-content img {
@@ -124,6 +124,13 @@
     .promotional-banner{
         margin-top: 50px;
         border-radius: 0px;
+    }
+
+    .promotional-banner h1{
+        max-width: 300px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        word-spacing: 2px;
     }
 
     .footer-container {
